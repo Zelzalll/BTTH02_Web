@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practice</title>
+    <link rel="shortcut icon" href="https://usapple.org/wp-content/uploads/2019/10/apple-granny-smith.png" />
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #f3f3f3;">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" fill="currentColor" class="bi bi-bootstrap">
+        <symbol id="bootstrap" viewBox="0 0 16 16">
+            <title>Bootstrap</title>
+            <path style="fill:white;stroke:white;stroke-width:0"
+                d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z" />
+            <path style="fill:white;stroke:white;stroke-width:0"
+                d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z" />
+        </symbol>
+    </svg>
+    <!-- Header -->
+    <header class="p-3 bg-blue text-white" id="header">
+        <nav class="navbar navbar-expand-sm navbar-dark" aria-label="Third navbar example">
+            <div class="container-fluid">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-white">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" aria-current="page" class="nav-link active px-2 active"
+                                style="border: 1px solid yellow; border-radius: 10px; color: yellow;">NGOẠI TỆ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-white">CHỨNG KHOÁN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-white">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link px-2 text-white">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+
+                    <div class="text-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-bell" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        <button type="button" class="btn btn-outline-warning me-2">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Section 1 -->
+    <div class="container-fluid container-md d-flex justify-content-center">
+        <div class="col-sm-9 m-5" style="width: 80%;">
+            <p class="text-danger bg-danger bg-opacity-50 ps-2" style="padding: .5em;">Hệ thống đã phát hiện các hoạt
+                động bất thường liên quan đến tài khoản của bạn. Vui lòng <b>kiểm tra ngay</b> nhật ký hoạt động.</p>
+            <!-- ----------------------------Tỉ giá ngoại tệ hiện tại---------------------- -->
+            <div class="cotainer-fluid">
+                <h3 style="margin: 1em auto .5em;">Tỉ giá ngoại lệ hiện tại</h3>
+
+                <div class="container-fluid d-inline-flex px-0 justify-content-between">
+                    <div class="col-sm-3 shadow-sm d-flex bg-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
+                            class="bi bi-currency-dollar" viewBox="0 0 40 40">
+                            <path style="fill:white;stroke:white;stroke-width:0;"
+                                d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z" />
+                        </svg>
+                        <div class="container-md container-md-by-me bg-white d-flex">
+                            <p class='my-1'>USD</p>
+                            <p class='my-1'><b class='h3' id="currency-USD">23 654</b> vnd</p>
+                            <p class="text-success my-1">+232</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 shadow-sm d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
+                            class="bi bi-currency-pound bg-danger" viewBox="0 0 40 40">
+                            <path style="fill:white;stroke:white;stroke-width:0;"
+                                d="M4 8.585h1.969c.115.465.186.939.186 1.43 0 1.385-.736 2.496-2.075 2.771V14H12v-1.24H6.492v-.129c.825-.525 1.135-1.446 1.135-2.694 0-.465-.07-.913-.168-1.352h3.29v-.972H7.22c-.186-.723-.372-1.455-.372-2.247 0-1.274 1.047-2.066 2.58-2.066a5.32 5.32 0 0 1 2.103.465V2.456A5.629 5.629 0 0 0 9.348 2C6.865 2 5.322 3.291 5.322 5.366c0 .775.195 1.515.399 2.247H4v.972z" />
+                        </svg>
+                        <div class="container-md container-md-by-me bg-white d-flex">
+                            <p class='my-1'>GBP</p>
+                            <p class='my-1'><b class='h3' id="currency-GBP">26 909</b> vnd</p>
+                            <p class="text-danger my-1">+145</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 shadow-sm d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor"
+                            class="bi bi-currency-euro bg-success" viewBox="0 0 40 40">
+                            <path style="fill:white;stroke:white;stroke-width:0;"
+                                d="M4 9.42h1.063C5.4 12.323 7.317 14 10.34 14c.622 0 1.167-.068 1.659-.185v-1.3c-.484.119-1.045.17-1.659.17-2.1 0-3.455-1.198-3.775-3.264h4.017v-.928H6.497v-.936c0-.11 0-.219.008-.329h4.078v-.927H6.618c.388-1.898 1.719-2.985 3.723-2.985.614 0 1.175.05 1.659.177V2.194A6.617 6.617 0 0 0 10.341 2c-2.928 0-4.82 1.569-5.244 4.3H4v.928h1.01v1.265H4v.928z" />
+                        </svg>
+                        <div class="container-md container-md-by-me bg-white d-flex">
+                            <p class='my-1'>EUR</p>
+                            <p class='my-1'><b class='h3' id="currency-EUR">24919</b> vnd</p>
+                            <p class="text-success my-1">+140</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-white py-3 mt-5" style="margin-bottom: 5em;">
+                <div class="container border border-2 py-2">
+                    <p class="h3 ms-3 fs-2 fw-bold">Tỉ giá ngoại tệ</p>
+                    <canvas id="chart"></canvas>
+                </div>
+            </div>
+        </div>
+        <!-- Section 1 1/4 -->
+        <div class="col-sm-3 mt-5">
+            <form class="example" action="action_page.php">
+                <input class="w-100" type="text" placeholder="Tìm kiếm" name="search" style="border: none; outline: none; padding-left: .5em;">
+            </form>
+            
+            <div class="container-fluid  flex-wrap mt-4 p-3" style="background-color: #FFFFFF;">
+                <div class="d-inline-flex align-items-center">
+                    <img class="w-25"
+                        src="https://lvgames.net/lqm/wp-content/uploads/2021/08/hinh_nen_seraphine_phung_am_tien_tu_lien_minh_huyen_thoai.jpg"
+                        alt="img" width="64px" height="64px">
+                    <div class="w-75 ps-2">
+                        <p class="mt-0 my-0 mt-0-by-me">Thông tin số 1</p>
+                        <p class="text-break" style="font-size: 9pt;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="d-inline-flex">
+                    <img class="w-25"
+                        src="https://lvgames.net/lqm/wp-content/uploads/2021/08/hinh_nen_seraphine_phung_am_tien_tu_lien_minh_huyen_thoai.jpg"
+                        alt="img" width="64px" height="64px">
+
+                    <div class="w-75 ps-2">
+                        <p class="mt-0 my-0 mt-0-by-me">Thông báo nâng cấp hệ thống</p>
+                        <p class="text-break" style="font-size: 9pt;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="d-inline-flex">
+                    <img class="w-25"
+                        src="https://lvgames.net/lqm/wp-content/uploads/2021/08/hinh_nen_seraphine_phung_am_tien_tu_lien_minh_huyen_thoai.jpg"
+                        alt="img" width="64px" height="64px">
+                    <div class="w-75 ps-2">
+                        <p class="mt-0 my-0 mt-0-by-me">Thông tin số 2</p>
+                        <p class="text-break" style="font-size: 9pt;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid mt-3" style="background-color: #BFC7D1;">
+                <div class="container py-4 " style="text-align: center;">
+                    <h3 style="font-weight: bold;">đang tải dữ liệu</h3>
+                    <div class="spinner-border mt-2"></div>
+                </div>
+            </div>
+
+            <img class="col-sm-12" style="width: 100%; background-repeat: no-repeat; background-size: cover; margin-bottom: 2em;"
+                src="https://ephoto360.com/uploads/effect-data/ephoto360.com/610076125/akali4-min5ddddd989d91c.jpg" alt="">
+        </div>
+    </div>
+    <!-- Section 2 -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="60vh" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption text-center">
+                        <h1>Example headline 1.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel. Lorem, ipsum
+                            dolor sit amet consectetur adipisicing elit. Omnis sequi earum quae porro, error, sapiente
+                            nobis in qui neque nesciunt quaerat deserunt! At repellat dolor iure fuga dolorum
+                            dignissimos aut, porro odit tenetur totam, non nam vitae ut ipsam labore quaerat, eius neque
+                            eveniet ipsa aperiam corporis consequuntur placeat? Repudiandae?
+                        </p>
+                        <div class="person d-flex justify-content-center">
+                            <div class="avatar">
+                                <img class="card-img-top"
+                                    src="https://usapple.org/wp-content/uploads/2019/10/apple-granny-smith.png"
+                                    alt="avatar">
+                            </div>
+                            <div class="info text-start">
+                                <p class="name">Nguyễn Văn A</p>
+                                <p class="job">Chuyên gia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="60vh" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-center">
+                        <h1>Example headline 2.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel. Lorem, ipsum
+                            dolor sit amet consectetur adipisicing elit. Omnis sequi earum quae porro, error, sapiente
+                            nobis in qui neque nesciunt quaerat deserunt! Repudiandae?
+                        </p>
+                        <div class="person d-flex justify-content-center">
+                            <div class="avatar">
+                                <img class="card-img-top"
+                                    src="https://usapple.org/wp-content/uploads/2019/10/apple-granny-smith.png"
+                                    alt="avatar">
+                            </div>
+                            <div class="info text-start">
+                                <p class="name">Nguyễn Văn A</p>
+                                <p class="job">Chuyên gia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="60vh" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption text-center">
+                        <h1>Example headline 3.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel. Lorem, ipsum
+                            dolor sit amet consectetur adipisicing elit. At repellat dolor iure fuga dolorum
+                            dignissimos aut, porro odit tenetur totam, non nam vitae ut ipsam labore quaerat, eius neque
+                            eveniet ipsa aperiam corporis consequuntur placeat? Repudiandae?
+                        </p>
+                        <div class="person d-flex justify-content-center">
+                            <div class="avatar">
+                                <img class="card-img-top"
+                                    src="https://usapple.org/wp-content/uploads/2019/10/apple-granny-smith.png"
+                                    alt="avatar">
+                            </div>
+                            <div class="info text-start">
+                                <p class="name">Nguyễn Văn A</p>
+                                <p class="job">Chuyên gia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="60vh" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-center">
+                        <h1>Example headline 4.</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis sequi earum quae porro,
+                            error. At repellat dolor iure fuga dolorum dignissimos aut, porro odit tenetur totam, non
+                            nam vitae ut ipsam labore quaerat, eius neque eveniet ipsa aperiam corporis consequuntur
+                            placeat?
+                        </p>
+                        <div class="person d-flex justify-content-center">
+                            <div class="avatar">
+                                <img class="card-img-top"
+                                    src="https://usapple.org/wp-content/uploads/2019/10/apple-granny-smith.png"
+                                    alt="avatar">
+                            </div>
+                            <div class="info text-start">
+                                <p class="name">Nguyễn Văn A</p>
+                                <p class="job">Chuyên gia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path style="fill:black;stroke:black;" fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+            </svg>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path style="fill:black;stroke:black;" fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Section 3 -->
+    <div class="container text-center section-3">
+        <h1>Quảng cáo</h1>
+        <div class="row">
+
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="https://usapple.org/wp-content/uploads/2019/10/apple-granny-smith.png"
+                    alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#" class="card-link">Card link</a></li>
+                    <li class="list-group-item">
+                        <span class="current-price">$45.00</span>
+                        <span class="original-price">$55.25</span>
+                        <span class="sale">35% Off</span>
+                    </li>
+                    <li class="list-group-item stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <span class="turns">(21)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="https://usapple.org/wp-content/uploads/2019/10/apple-pink-lady.png"
+                    alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#" class="card-link">Card link</a></li>
+                    <li class="list-group-item">
+                        <span class="current-price">$45.00</span>
+                        <span class="original-price">$55.25</span>
+                        <span class="sale">35% Off</span>
+                    </li>
+                    <li class="list-group-item stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <span class="turns">(21)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="https://usapple.org/wp-content/uploads/2019/10/apple-gala.png"
+                    alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#" class="card-link">Card link</a></li>
+                    <li class="list-group-item">
+                        <span class="current-price">$45.00</span>
+                        <span class="original-price">$55.25</span>
+                        <span class="sale">35% Off</span>
+                    </li>
+                    <li class="list-group-item stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <span class="turns">(21)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" style="width: 15rem;">
+                <img class="card-img-top" src="https://usapple.org/wp-content/uploads/2019/10/apple-honeycrisp.png"
+                    alt="Card image cap">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#" class="card-link">Card link</a></li>
+                    <li class="list-group-item">
+                        <span class="current-price">$45.00</span>
+                        <span class="original-price">$55.25</span>
+                        <span class="sale">35% Off</span>
+                    </li>
+                    <li class="list-group-item stars">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path style="fill:yellow;stroke:yellow;stroke-width:0"
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <span class="turns">(21)</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-by-me bg-lightgray">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"> </script>
+<script src="./index.js"></script>
+
+</html>

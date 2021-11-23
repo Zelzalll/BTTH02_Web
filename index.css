@@ -1,0 +1,247 @@
+.bg-blue {
+    background-color: #134694 !important;
+}
+
+.bg-lightgray {
+    background-color: #e2e2e283 !important;
+}
+
+header nav .container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.me-2 {
+    margin-left: 0.5em;
+}
+
+.row {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-by-me .container {
+    min-width: 90%;
+}
+
+.section-3 {
+    margin: .5em auto;
+}
+
+.section-3 h1 {
+    margin: .75em auto;
+    font-size: xx-large;
+}
+
+.container-by-me {
+    padding-top: 1.5em !important;
+}
+
+.container .border-top {
+    border-top: 1px solid green !important;
+}
+
+.my-4 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.p-3 {
+    padding: 0 !important;
+}
+
+.text-end svg {
+    margin-right: 20px;
+}
+
+.card {
+    margin: .75em;    
+}
+
+.card img {
+    margin: 2em 0;
+}
+
+.card .list-group {
+    border: none;
+}
+
+.list-group-item {
+    border: none;
+    text-align: left;
+    padding: 0.25rem 1rem;
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: unset;
+    font-weight: bold;
+
+}
+
+.current-price {
+    color: red;
+    font-weight: bold;
+}
+
+.original-price {
+    color: gray;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.sale {
+    color: rgb(11, 223, 11);
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.stars {
+    margin-bottom: 1em;
+}
+
+.turns {
+    color: gray;
+}
+
+.carousel-item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+.carousel-item svg rect {
+    fill: #7db0fd;
+}
+
+.carousel-inner .container {
+    width: 50%;
+}
+
+.carousel-caption {
+    left: 25%;
+    right: 25%;
+    padding-bottom: 0;
+    padding-bottom: 0;
+
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+
+}
+
+.carousel-caption h1 {
+    color: black;
+    font-size: xx-large;
+}
+
+.carousel-caption p {
+    margin-top: 2em;
+    color: #383838;
+    overflow: hidden;
+}
+
+.person {
+    width: 100%;
+    margin-top: 1em;
+    align-items: center;
+    align-content: center;
+}
+
+.person .avatar {
+    width: 3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info p {
+    margin: .1em 0 .1em 1em;
+}
+
+.info .name {
+    color: black;
+    font-weight: 600;
+}
+
+.info .job {
+    color: red;
+}
+
+
+.carousel-control-prev {
+    left: 15%;
+    top: 50%;
+}
+
+.carousel-control-next {
+    right: 15%;
+    top: 50%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 1em;
+    height: 1em;    
+}
+
+.m-5 {
+    margin: 1.5rem 3rem 0 !important;
+}
+
+.container-md-by-me {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.col-sm-3 {
+    width: 30%;
+}
+
+.col-sm-3 svg path {
+    top: 50%;
+    transform: translate(30%, 30%);
+    bottom: initial;
+}
+
+.mt-0-by-me {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.mt-5 {
+    margin-top: 2.5em !important;
+}
+
+.p-3 {
+    padding: .5em !important;
+}
+
+@media (max-width: 863) {
+    .container-md {
+        flex-wrap: wrap;
+    }
+    .mt-5 {
+        width: 100%;
+        margin-top: 0 !important;
+    }
+    
+    .carousel-caption p {
+        width: 50%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
